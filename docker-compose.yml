@@ -7,9 +7,9 @@ services:
     container_name: klvr-littlelink-server
     environment:
       - META_TITLE=Jeroen Klaver
-      - META_DESCRIPTION=Dutch, Network Engineer, Smarthome
+      - META_DESCRIPTION=Dutch, Network Engineer, Smarthome & BBQ
       - META_AUTHOR=Jeroen Klaver
-      - META_KEYWORDS=HomeLab, Network, smarthome, gadgets
+      - META_KEYWORDS=HomeLab, Network, smarthome, gadgets, bbq, jeroen, klaver, cisco
       - LANG=nl
       - META_INDEX_STATUS=all
       - OG_SITE_NAME=Jeroen Klaver
