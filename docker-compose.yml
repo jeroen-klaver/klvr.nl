@@ -19,6 +19,7 @@ services:
       - OG_IMAGE=https://pbs.twimg.com/profile_images/1595722855341326336/jR1mjywS_400x400.jpg
       - OG_IMAGE_WIDTH=400
       - OG_IMAGE_HEIGHT=400
+      - GA_TRACKING_ID=G-EB0S7KFJDP
 
       - THEME=Dark
       - FAVICON_URL=https://pbs.twimg.com/profile_images/1595722855341326336/jR1mjywS_400x400.jpg
