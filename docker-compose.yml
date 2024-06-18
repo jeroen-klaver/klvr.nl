@@ -29,7 +29,7 @@ services:
       - NAME=Jeroen Klaver
       - BIO=Dutch, Network Engineer, Smarthome
       # use ENV variable names for order, listed buttons will be boosted to the top
-      - BUTTON_ORDER=LINKED_IN,MASTODON,TWITTER
+      - BUTTON_ORDER=LINKED_IN,GITHUB,MASTODON,BLUESKY,INSTAGRAM
       # you can render an unlimited amount of custom buttons by adding 
       # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
       #- CUSTOM_BUTTON_TEXT=MASTODON
@@ -45,12 +45,10 @@ services:
       #- TWITTER=https://www.twitter.com/jeroen_klvr
       - INSTAGRAM=https://www.instagram.com/jeroenklavert/
       - LINKED_IN=https://www.linkedin.com/in/jeroen-klaver/
-      #- YOUTUBE=https://l.technotim.live/subscribe
-      #- TWITCH=https://l.technotim.live/twitch
-      #- DISCORD=https://l.technotim.live/discord
-      #- TIKTOK=https://l.technotim.live/tiktok
-      #- FACEBOOK=https://l.technotim.live/facebook
-      #- PATREON=https://l.technotim.live/patreon
+      #- YOUTUBE=https://youtube.com/
+      #- TWITCH=https://twitch.com/
+      #- DISCORD=https://discord.com
+      #- TIKTOK=https://tiktok.com
       - FOOTER=Jeroen Klaver © 2024
     ports:
       - 8082:3000
