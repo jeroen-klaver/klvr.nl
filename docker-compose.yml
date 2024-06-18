@@ -14,7 +14,7 @@ services:
       - META_INDEX_STATUS=all
       - OG_SITE_NAME=Jeroen Klaver
       - OG_TITLE=Jeroen Klaver
-      - OG_DESCRIPTION=The home of Jeoren Klaver
+      - OG_DESCRIPTION=The home of Jeroen Klaver
       - OG_URL=https://klvr.nl
       - OG_IMAGE=https://pbs.twimg.com/profile_images/1595722855341326336/jR1mjywS_400x400.jpg
       - OG_IMAGE_WIDTH=400
