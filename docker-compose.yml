@@ -52,7 +52,7 @@ services:
       #- PATREON=https://l.technotim.live/patreon
       - FOOTER=Jeroen Klaver © 2024
     ports:
-      - 8084:3000
+      - 8082:3000
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
