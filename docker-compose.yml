@@ -1,0 +1,58 @@
+version: "3.0"
+services:
+  littlelink-server:
+    image: ghcr.io/techno-tim/littlelink-server:latest
+    # dockerhub is also supported timothystewart6/littlelink-server
+    # image: timothystewart6/littlelink-server:latest
+    container_name: littlelink-server
+    environment:
+      - META_TITLE=Jeroen Klaver
+      - META_DESCRIPTION=Dutch, Network Engineer, Smarthome
+      - META_AUTHOR=Jeroen Klaver
+      - META_KEYWORDS=HomeLab, Network, smarthome, gadgets
+      - LANG=nl
+      - META_INDEX_STATUS=all
+      - OG_SITE_NAME=Jeroen Klaver
+      - OG_TITLE=Jeroen Klaver
+      - OG_DESCRIPTION=The home of Jeoren Klaver
+      - OG_URL=https://klvr.nl
+      - OG_IMAGE=https://pbs.twimg.com/profile_images/1595722855341326336/jR1mjywS_400x400.jpg
+      - OG_IMAGE_WIDTH=400
+      - OG_IMAGE_HEIGHT=400
+
+      - THEME=Dark
+      - FAVICON_URL=https://pbs.twimg.com/profile_images/1595722855341326336/jR1mjywS_400x400.jpg
+      - AVATAR_URL=https://pbs.twimg.com/profile_images/1595722855341326336/jR1mjywS_400x400.jpg
+      - AVATAR_2X_URL=https://pbs.twimg.com/profile_images/1595722855341326336/jR1mjywS_400x400.jpg
+      - AVATAR_ALT=Jeroen Klaver Profile Pic
+      - NAME=Jeroen Klaver
+      - BIO=Dutch, Network Engineer, Smarthome
+      # use ENV variable names for order, listed buttons will be boosted to the top
+      - BUTTON_ORDER=LINKED_IN,MASTODON,TWITTER
+      # you can render an unlimited amount of custom buttons by adding 
+      # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
+      #- CUSTOM_BUTTON_TEXT=MASTODON
+      #- CUSTOM_BUTTON_URL=https://mastodon.nl/@klaver
+      #- CUSTOM_BUTTON_COLOR=#000000
+      #- CUSTOM_BUTTON_TEXT_COLOR=#ffffff
+      #- CUSTOM_BUTTON_ALT_TEXT=Mastodon account
+      #- CUSTOM_BUTTON_NAME=MASTODON
+      #- CUSTOM_BUTTON_ICON=fas file-alt
+      - MASTODON=https://mastodon.nl/@klaver
+      - BLUESKY=https://bsky.app/profile/klaver.bsky.social
+      - GITHUB=https://github.com/jeroen-klaver
+      #- TWITTER=https://www.twitter.com/jeroen_klvr
+      - INSTAGRAM=https://www.instagram.com/jeroenklavert/
+      - LINKED_IN=https://www.linkedin.com/in/jeroen-klaver/
+      #- YOUTUBE=https://l.technotim.live/subscribe
+      #- TWITCH=https://l.technotim.live/twitch
+      #- DISCORD=https://l.technotim.live/discord
+      #- TIKTOK=https://l.technotim.live/tiktok
+      #- FACEBOOK=https://l.technotim.live/facebook
+      #- PATREON=https://l.technotim.live/patreon
+      - FOOTER=Jeroen Klaver © 2024
+    ports:
+      - 8082:3000
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
