@@ -27,7 +27,7 @@ services:
       - AVATAR_2X_URL=https://pbs.twimg.com/profile_images/1595722855341326336/jR1mjywS_400x400.jpg
       - AVATAR_ALT=Jeroen Klaver Profile Pic
       - NAME=Jeroen Klaver
-      - BIO=Dutch, Network Engineer, Smarthome
+      - BIO=Dutch, Network Engineer, Smarthome & BBQ
       # use ENV variable names for order, listed buttons will be boosted to the top
       - BUTTON_ORDER=LINKED_IN,GITHUB,MASTODON,BLUESKY,INSTAGRAM
       # you can render an unlimited amount of custom buttons by adding 
